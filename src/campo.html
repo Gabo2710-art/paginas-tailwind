@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-green-200 to-violet-400">
+    
+    <div class="max-w-5xl mx-auto my-10 bg-transparent">
+        <header class="flex flex-col lg:flex-row items-center justify-between text center">
+            
+            <DIV>
+                <h1 class="text-slate-950 text-4xl font-bold">Base de Datos</h1>
+            </DIV>
+            <nav class="space-x-8 text-black text-lg font-semibold mt-5 md:mt-0">
+                <a href="index.html" class="hover:underline text-slace-950 font-bold">INICIO</a>
+                <a href="contenido.html" class="hover:underline text-slace-950 font-bold">CONTENIDO</a>
+            </nav>
+     
+        </header>
+        <section class="mt-24">
+            <article">
+               
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-black">Campo de un Atributo:</h1><br><br>
+                <p class="text-justify font-bold ">Los atributos de campo son los atributos que se pueden aplicar a campos de una matriz, estructura, unión o matriz de caracteres:
+                </p><br>
+                <ul class="text-justify	 font-bold ms-20" style="list-style-type: square;">
+                    <li>[ignore], [size_is]</li>
+                    <li>[max_is]</li>
+                    <li>[length_is]</li>
+                    <li>[first_is]</li>
+                    <li>[last_is]</li>
+                    <li>[switch_is]</li>
+                    <li>[string]</li>
+                    <li>atributos de puntero</li>
+                </ul>
+                <br><br>
+                <img src="img/TIPOS DE BASES DE DATOS/CAMPO DE UN ATRIBUTO.png" class="w100 h-40 ms-44" alt=""><br> 
+                <p class="text-justify font-bold ">Por ejemplo, los atributos de campo se usan junto con declaraciones de matriz para especificar el tamaño de la matriz o la parte de la matriz que contiene datos válidos. Para ello, se asocia otro parámetro, campo de estructura o una expresión constante con la matriz.</p>
+                <br>
+                <br>
+                <p class="text-justify font-bold ">El atributo [ignore] designa campos de puntero que se omitirán durante el proceso de serialización. Este campo omitido se establece en NULL en el lado receptor.</p>
+                <br>
+                <p class="text-justify font-bold ">MIDL proporciona matrices compatibles, variables y abiertas . Se llama a una matriz conforme si sus límites se determinan en tiempo de ejecución. El atributo [size_is] designa el límite superior en el tamaño de asignación de la matriz y el atributo [max_is] designa el límite superior en el valor de un índice de matriz válido. Para obtener más información, vea [matrices].</p>
+                <br>
+                <p class="text-justify font-bold ">Se llama a una matriz variable si sus límites se determinan en tiempo de compilación, pero el intervalo de elementos transmitidos se determina en tiempo de ejecución. Una matriz abierta (también denominada matriz variable conforme) es una matriz cuyo límite superior y intervalo de elementos transmitidos se determinan en tiempo de ejecución. Para determinar el intervalo de elementos transmitidos de una matriz, la declaración de matriz debe incluir un atributo [length_is], [first_is] o [last_is].</p>
+                <br>
+                <p class="text-justify font-bold ">El atributo [length_is] designa el número de elementos de matriz que se van a transmitir y el atributo [first_is] designa el índice del primer elemento de matriz que se va a transmitir. El atributo [last_is] designa el índice del último elemento de matriz que se va a transmitir.</p>
+                <br>
+                <p class="text-justify font-bold ">El atributo de campo [switch_is] designa un discriminador de unión. Cuando la unión es un parámetro de procedimiento, el discriminador de la unión debe ser otro parámetro del mismo procedimiento. Cuando la unión es un campo de una estructura, el discriminador debe ser otro campo de la estructura en el mismo nivel que el campo de unión. El discriminador debe ser un tipo booleano, char, int o enum , o un tipo que se resuelva en uno de estos tipos. Para obtener más información, vea Uniones no encapsuladas y [switch_is].</p>
+                <br>
+                <p class="text-justify font-bold ">El atributo de campo [string] designa que un carácter unidimensional o una matriz de bytes, o un puntero a un carácter o secuencia de bytes terminada en cero, se tratará como una cadena. El atributo de cadena solo se aplica a matrices y punteros unidimensionales. El tipo de elemento se limita a char, byte, wchar_t o a un tipo con nombre que se resuelve en uno de estos tipos.</p>
+                
+
+            </article>
+        </section>
+    </div>
+</body>
+</html>

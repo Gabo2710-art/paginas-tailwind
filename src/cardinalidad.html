@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-violet-300 from-green-200 to-green-400">
+    
+    <div class="max-w-5xl mx-auto my-10 bg-transparent">
+        <header class="flex flex-col lg:flex-row items-center justify-between text center">
+            
+            <DIV>
+                <h1 class="text-slate-950 text-4xl font-bold">Base de Datos</h1>
+            </DIV>
+            <nav class="space-x-8 text-white text-lg font-semibold mt-5 md:mt-0">
+                <a href="index.html" class="hover:underline text-amber-600 font-bold">INICIO</a>
+                <a href="contenido.html" class="hover:underline text-amber-600 font-bold">CONTENIDO</a>
+            </nav>
+     
+        </header>
+        <section class="mt-24">
+            <article">
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">Modelo entidad relacional (Cardinalidad):</h1><br><br>
+                    <br><p class="text-justify	 font-bold ">Las entidades y relaciones son conceptos  imprescindibles en el ámbito de las bases de datos. Es por ello que es fundamental conocer cómo se relacionan, en qué se diferencias y cómo se representan a través de los diagramas de entidad-relación. <br><br>
+                        <img src="img/TIPOS DE BASES DE DATOS/modelo entidad relacion.png" class="w-400 h-60 ms-52 " alt=""><br>
+                
+                    El modelo entidad relación o ERD, corresponde a la segunda fase de la creación de una base de datos. Es un diagrama de flujo que representa de manera simplificada cómo las personas, objetos y conceptos se relacionan entre sí. <br><br>
+                <img src="img/TIPOS DE BASES DE DATOS/cardenalidad y entidad.jpg" class="w-400 h-60 ms-44 " alt=""><br>
+                <p class="text-justify	 font-bold ">Los elementos básicos de un modelo entidad - relación son: las entidades, las relaciones, los atributos y las cardinalidades. </p><br>   
+                </p>
+                <br>
+                <ul class="text-justify	mb-3 font-bold ms-20" style="list-style-type: square;">
+                    <li>Una entidad es un objetivo del cual se recoge información de interés para la base de datos. Gráficamente se representan mediante un rectángulo. Pueden ser fuertes (no dependen de otras entidades para existir) o débiles (siempre dependen de otra entidad, no tienen sentido por ellas mismas).</li><br>
+                    <li>Una relación describe una conexión entre entidades y especifica cómo se relacionan entre ellas. Suelen ser verbos y se representan mediante un rombo. Las relaciones pueden ser de diferentes grados: las de grado 1 solo relacionan una entidad consigo misma, las de grado 2 son relaciones que asocian dos entidades distintas, y las de grado n son aquellas que unen más de dos entidades. Además de los grados, las relaciones pueden tener distintos tipos de correspondencia: de 1:1 (a cada ocurrencia de una entidad le corresponde como máximo una ocurrencia de otra entidad), de 1:N (a cada ocurrencia de la primera entidad le pueden corresponder varias de la segunda entidad), y N:M (a cada ocurrencia de una entidad le pueden corresponder varias de la otra entidad relacionada y viceversa).</li><br>
+                    <li>Los atributos son cada una de las propiedades de una entidad o relación. Gráficamente se representan mediante un círculo. Dentro de una entidad, tiene que haber un atributo principal que la identifica y que su valor tiene que ser único. Un ejemplo de atributo principal sería el DNI de una persona, que la identifica de manera única.</li><br>
+                    <li>Los atributos son cada una de las propiedades de una entidad o relación. Gráficamente se representan mediante un círculo. Dentro de una entidad, tiene que haber un atributo principal que la identifica y que su valor tiene que ser único. Un ejemplo de atributo principal sería el DNI de una persona, que la identifica de manera única.</li><br>
+                    
+                </ul>
+                <br>
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">Diseño del modelo entidad-relación:</h1><br>
+                <p class="text-justify	 font-bold ">Para diseñar el diagrama del modelo entidad - relación,  con los datos recopilados anteriormente, se siguen las reglas gráficas de los elementos (entidades -> rectángulos, relaciones -> rombos, atributos -> círculos). </p><br>   
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">Transformación a diagrama en el modelo relacional:</h1><br>
+                <p class="text-justify	 font-bold ">Una vez se tenga listo el diagrama del modelo entidad - relación, se convierten todos los datos a tablas teniendo en cuenta los siguientes pasos: </p>   
+                </p>
+                <br>
+                <ul class="text-justify	mb-3 font-bold ms-20" style="list-style-type: square;">
+                    <li>Todas las entidades se convertirán en tablas, donde a cada fila se le denomina tupla.</li><br>
+                    <li>Todos los atributos se transformarán en una columna dentro de la tabla a la que pertenecen. El atributo principal se convertirá en la clave primaria de la tabla.</li><br>
+                    <li>Aquellas relaciones que sean N:M se convertirán en una tabla que tendrá como clave primaria las dos claves primarias de las entidades relacionadas.
+                        En estas relaciones, existen tres posibilidades: <br>
+                       Si la cardinalidad es (0,1) en ambas entidades, se crea una tabla. <br>
+                       Si la cardinalidad de una es (0,1) y la de la otra es (1,1), se suele pasar la clave primaria de (1,1) a la de (0,1). <br>
+                        Si la cardinalidad de ambas es (1,1), se pasa la clave primaria de cualquiera de las dos a la otra.
+                        </li><br>
+                    <li>En las relaciones 1:N, la clave primaria de la entidad con cardinalidad 1 pasará a la tabla de la entidad con cardinalidad N.</li><br>
+                    
+                </ul>
+                <br>
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">Ejemplos de entidad – relación:</h1><br>
+                <p class="text-justify	 font-bold ">Un ejemplo de cómo quedaría plasmado gráficamente esta base de datos en que las entidades son autor, libro, ejemplar y usuario: </p><br>  
+                <img src="img/TIPOS DE BASES DE DATOS/cardenalidad y entidad1.jpg" class="w-800 h-80 ms-52 " alt=""><br>
+                <p class="text-justify	 font-bold ">De acuerdo al ejemplo presentado anteriormente, los atributos de autor son código y nombre, los atributos de libro son páginas, código, título, ISBN y editorial, los atributos de ejemplar son código y localización, y los atributos de usuario son código, nombre, teléfono y dirección, el atributo principal de todas las entidades es el código, dado que es único para cada libro, autor, usuario y ejemplar. <br><br>
+                    Existen relaciones entre autor y libro, entre libro y ejemplar, y entre usuario y ejemplar.
+                    </p><br> 
+            </li><br>
+                </article>
+       </section>
+    </div>
+</body>
+</html>

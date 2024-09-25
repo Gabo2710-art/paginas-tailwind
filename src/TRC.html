@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-cyan-300 to-green-400">
+    
+    <div class="max-w-5xl mx-auto my-10 bg-transparent">
+        <header class="flex flex-col lg:flex-row items-center justify-between text center">
+            
+            <DIV>
+                <h1 class="text-slate-950 text-4xl font-bold">BASE DE DATOS</h1>
+              
+            </DIV>
+            <nav class="space-x-8 text-white text-lg font-semibold mt-5 md:mt-0">
+                <a href="index.html" class="hover:underline text-amber-700 font-bold">INICIO</a>
+                <a href="contenido.html" class="hover:underline text-amber-700 font-bold">CONTENIDO</a>
+            </nav>
+     
+           </header>
+        <section class="mt-24">
+            <nav class="text-red-900 text-2xl mb-3 text-center md:text-left font-black text-base hover:underline">
+                <a href="#table">Tabla en Base de Datos/</a>                
+                <a href="#Regist">Registro en Base de Datos/</a>
+                <a href="#CampoBD">Campo en Base de Datos</a>
+            </nav><br>
+            <article">
+              
+                <h1 id="table" class="text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">- Tabla en Base de Datos:</h1>
+                <br><p class="text-justify font-bold ">Una tabla en una base de datos organiza datos en filas y columnas. Cada columna representa un campo específico (como nombre o dirección) y cada fila contiene un conjunto de datos para esos campos. Las tablas pueden estar relacionadas entre sí mediante campos comunes, facilitando la vinculación de datos en consultas e informes. Son fundamentales para almacenar grandes cantidades de información de manera organizada y eficiente, similar a una hoja de Excel.
+                </p><br><br>
+                <img src="img/TIPOS DE BASES DE DATOS/TABLA2.png" class="w-800 h-72 ms-64" alt="">
+                <br>
+                <br>
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">Partes de una Tabla:</h1>
+                <ul class="text-justify	 font-bold ms-20" style="list-style-type: square;">
+                    <li>Filas: Representan registros únicos, como productos con nombre, precio y descripción.</li>
+                    <li>Columnas: Definen los tipos de datos almacenados, como texto, número o fecha.</li>
+                    <li>Clave Primaria: Columna con valores únicos para identificar registros específico.</li>
+                    <li>Claves Externas: Establecen relaciones con otras tablas.</li>
+                </ul>
+                <br>
+                <br>
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">Estructura de las Tablas:</h1>
+                <ul class="text-justify	 font-bold ms-20" style="list-style-type: square;">
+                    <li>Campo: Nombre de la columna con un tipo de dato específico.</li>
+                    <li>Registro: Cada fila de datos almacenados, que puede contener datos nulos.</li>
+                </ul>
+                <br>
+                <br>
+                <img src="img/TIPOS DE BASES DE DATOS/TABLA.png" class="w-800 h-72 ms-64" alt="">
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">Tipos de Tablas:</h1>
+                <ul class="text-justify	 font-bold ms-20" style="list-style-type: square;">
+                    <li>Tablas de Datos: Almacenan información principal como clientes, productos y transacciones.</li>
+                    <li>Tablas de Configuración: Guardan datos estáticos para personalizar la base de datos.</li>
+                    <li>Tablas de Relación: Establecen vínculos entre datos de diferentes tablas.</li>
+                    <li>Tablas de Auditoría: Registran cambios en la base de datos para seguimiento y seguridad.</li>
+                    <li>Tablas Temporales: Almacenan datos temporales o intermedios y se borran automáticamente cuando ya no son necesarios.</li>
+                </ul>
+                <br>
+                <br>
+                <h1 id="Regist" class="text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">- Registro en Base de Datos:</h1>
+                <br><p class="text-justify font-bold ">Un registro en una base de datos es esencialmente una fila en una tabla que contiene información específica sobre un elemento único. Cada fila está compuesta por campos (columnas) que definen los tipos de datos que se pueden almacenar para ese elemento. Al conjunto de todos estos registros se le denomina tabla, y las tablas se organizan dentro de una base de datos. Los registros permiten almacenar, organizar y recuperar datos de manera eficiente, y pueden ser fácilmente creados, modificados o eliminados sin afectar al resto de la información en la base de datos. En otras palabras, un registro es la unidad básica de almacenamiento de datos en una base de datos relacional, los registros se pueden crear, modificar y borrar fácilmente sin afectar otros datos en la base de datos.
+                </p><br>
+                <h1 class="text-justify	 font-bold">Ejemplo de un Registro de Base de Datos:</h1><br><br>
+                <img src="img/TIPOS DE BASES DE DATOS/RE.png" class="w-600 h-60 ms-64" alt="">
+                <br>
+                <p><p class="text-justify font-bold ">En el ejemplo anterior se muestra una tabla llamada Estudiantes, la cual contiene tres registros que en ese caso serían tres estudiantes.
+                </p></p>
+                <br>
+                <br>
+                <h1 id="CampoBD" class= "text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">- Campo en Base de Datos:</h1>
+                <br><p class="text-justify font-bold ">Un campo es un solo elemento de datos contenido en una columna dentro de una base de datos, y básicamente son las secciones verticales de las tablas. Por ejemplo, un campo puede ser el nombre, la dirección o el número de teléfono de un cliente.
+                </p><br>
+                <p class="text-justify font-bold ">En términos simples, una base de datos consta de tablas. Cada tabla consta de numerosas celdas de tabla, que son fragmentos importantes de información. Estas celdas de la tabla están organizadas en columnas y filas. Las filas son los registros. Aquí es donde se guarda la información de un determinado objeto (es decir, cliente, pedido, etc.). Las columnas son los campos. El campo corresponderá a ciertos datos como ID, Nombre, Apellido y edad. Cada campo de la base de datos necesita un título; es importante que estos títulos sean significativos para evitar confusiones más adelante.</p>
+                <br>
+                <h1 class="text-justify	 font-bold">Ejemplo:</h1><br><br>
+                <img src="img/TIPOS DE BASES DE DATOS/TABLA REGISTRO CAMPO.png" class="w-100 h-40 ms-64" alt="">
+                <br>
+                <p class="text-justify font-bold ">En la imagen anterior se muestra una tabla en la cual se identifican los campos y registros; los campos en este caso serían las columnas número de control, apellido paterno, apellido materno, nombre, asignaturas: Matemática, Física y Química. Los registros son todos los datos almacenados dentro de la tabla, la recopilación de datos dentro de los campos a lo largo de una fila crea un registro.</p>
+               
+            </article>
+        </section>
+    </div>
+</body>
+</html>
