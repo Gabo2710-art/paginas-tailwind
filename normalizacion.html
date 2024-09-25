@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-pink-100 to-white-200">
+    
+    <div class="max-w-5xl mx-auto my-10 bg-transparent">
+        <header class="flex flex-col lg:flex-row items-center justify-between text center">
+            
+            <DIV>
+                <h1 class="text-slate-950 text-4xl font-bold">Base de Datos</h1>
+            </DIV>
+            <nav class="space-x-8 text-black text-lg font-semibold mt-5 md:mt-0">
+                <a href="index.html" class="hover:underline text-slace-950 font-bold">INICIO</a>
+                <a href="contenido.html" class="hover:underline text-slace-950 font-bold">CONTENIDO</a>
+            </nav>
+     
+        </header>
+        <section class="mt-24">
+            <article">
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-black">Normalización de Base de Datos</h1>
+                <br><br>
+                <h1 class="text-justify	 font-bold ms-30" style="list-style-type: square;" ">Es el proceso de organizar los datos de una base de datos, valga la redundancia. Debemos tener en cuenta la creación de tablas y las reglas que se usan para definir las relaciones, estas reglas son diseñadas para proteger los datos, y para que la base de datos sea flexible con el fin de eliminar redundancias y dependencias incoherentes. <br><br> 
+                <img src="img/TIPOS DE BASES DE DATOS/normalizacion.png" class="w-800 h-60 ms-80"  
+               
+                <h1 class="text-justify	 font-bold ms-30" style="list-style-type: square;" ">La normalización tiene como objetivo optimizar los datos y brindar integridad, sus principales beneficios son: <br><br> 
+                              
+                <ul class="text-justify	 font-bold ms-20" style="list-style-type: square;">
+                    <li>Evitar la redundancia de los datos.</li>
+                    <li>Disminuir problemas de actualización de los datos en las tablas.</li>
+                    <li>Proteger la integridad de los datos.</li>
+                    <li>Facilitar el acceso e interpretación de los datos.</li>
+                    <li>Reducir el tiempo y complejidad de revisión de las bases de datos.</li>
+                    <li>Optimizar el espacio de almacenamiento.</li>
+                    <li>Prevenir borrados indeseados de datos.</li>
+                </ul>
+                <br><br>
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-black">Requisitos de la normalización:</h1>
+                <h1 class="text-justify	 font-bold ms-30" style="list-style-type: square;" ">Para que las tablas de nuestra Base de Datos estén normalizadas deben cumplir las siguientes reglas: <br><br></h1> 
+                <ul class="text-justify	 font-bold ms-20" style="list-style-type: square;">
+                    <li>Cada tabla debe tener su nombre único.</li>
+                    <li>No puede haber dos filas iguales.</li>
+                    <li>No se permiten los duplicados.</li>
+                    <li>Todos los datos en una columna deben ser del mismo tipo.</li>
+                </ul>
+                <br><br>
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-black">Reglas o niveles de normalización:</h1>
+                <h1 class="text-justify	 font-bold ms-30" style="list-style-type: square;" ">Para normalizar una base de datos existen principalmente 3 reglas, las cuales se deberían cumplir para evitar redundancias e incoherencias en las dependencias. A estas reglas se les conoce como "Forma normal" qué va de la 1 a la 3 y si la base de datos cumple con cada regla se dice que está en la "primera o segunda o tercera forma normal". A continuación se detallan cada una de ellas: <br><br></h1> 
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-black">Primera forma normal:</h1>
+                <ul class="text-justify	 font-bold ms-20" style="list-style-type: square;"></ul>
+                    <li>Elimine los grupos repetidos de las tablas individuales.</li>
+                    <li>Cree una tabla independiente para cada conjunto de datos relacionados.</li>
+                    <li>Identifique cada conjunto de datos relacionados con una clave principal.</li>
+                    
+                </ul><br>
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-black">Ejemplo:</h1>
+                <img src="img/TIPOS DE BASES DE DATOS/NORMALIZACION 1FN.png" class="w-800 h-60 ms-80">
+                
+                <h1 class="text-justify	 font-bold ms-30" style="list-style-type: square;" ">Es imperativo mantener la unicidad de los valores de los atributos/columnas. En que si bien la solución inicial puede ser duplicar el registro/tupla para contener la información adicional, no es una medida aceptada. Otra opción aparente sería agregar curso 1 y curso 2. Al igual que lo indicado en la figura siguiente permtiría atributos en blanco o nulos. <br><br></h1>
+
+                <img src="img/TIPOS DE BASES DE DATOS/NORMALIZACION1FN.1.png" class="w-800 h-60 ms-80">
+
+                <h1 class="text-justify	 font-bold ms-30" style="list-style-type: square;" ">Entonces, la solución pasa por la creación de otra entidad/tabla para el almacenamiento de teléfonos. <br><br></h1>
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-black">Segunda forma normal:</h1>
+                    
+                    <ul class="text-justify	 font-bold ms-20" style="list-style-type: square;"></ul>
+                        <li>Cree tablas independientes para conjuntos de valores que se apliquen a varios registros.</li>
+                        <li>Relacione estas tablas con una clave externa.</li>
+                                        
+                </ul><br>
+                <img src="img/TIPOS DE BASES DE DATOS/NORMALIZACION 2FN.png" class="w-800 h-60 ms-80"><br><br>
+
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-black">Tercera forma normal:</h1>
+                    <ul class="text-justify	 font-bold ms-20" style="list-style-type: square;"></ul>
+                        <li>Elimine los campos que no dependan de la clave.</li><br><br>
+                        <img src="img/TIPOS DE BASES DE DATOS/NORMALIZACION 3FN.png" class="w-900 h-60 ms-80">    
+                                        
+                </ul><br>
+                <h1 class="text-justify	 font-bold ms-30" style="list-style-type: square;" ">Cada nivel de normalización exige cierta complejidad, pero se debe analizar si en realidad necesitas llegar hasta la tercera forma normal, se debe buscar lo que mejor se adapte a los requerimientos. </h1>
+                
+
+                
+            </article>
+       </section>
+    </div>
+</body>
+</html>

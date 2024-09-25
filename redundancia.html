@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-neutral-50from-amber-200 to-green-800">
+    
+    <div class="max-w-5xl mx-auto my-10 bg-transparent">
+        <header class="flex flex-col lg:flex-row items-center justify-between text center">
+            
+            <DIV>
+                <h1 class="bg-sky-100 text-4xl font-bold">Base de Datos</h1>
+            </DIV>
+            <nav class="space-x-8 text-black text-lg font-semibold mt-5 md:mt-0">
+                <a href="index.html" class="hover:underline text-slace-950 font-bold">INICIO</a>
+                <a href="contenido.html" class="hover:underline text-slace-950 font-bold">CONTENIDO</a>
+            </nav>
+     
+        </header>
+        <section class="mt-24">
+            <article">
+                <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">La Redundancia</h1>
+                <img src="img/TIPOS DE BASES DE DATOS/REDUNDANCIA.png" class="ms-48" alt="">
+                <br><p class="text-justify	 font-bold ">La redundancia en bases de datos se refiere a la duplicación innecesaria de datos en múltiples ubicaciones dentro de la base de datos. Esto puede llevar a inconsistencias, aumento de costos de almacenamiento y dificultades en la gestión de datos. <br><br>
+                    <h1 class="text-slace-950 text-2xl mb-3 text-center md:text-left font-bold">¿Cómo evitar la Redundancia?</h1>
+                    <img src="img/TIPOS DE BASES DE DATOS/REDUNDACIA3.png" class="ms-48" alt=""> 
+                </p><br>
+                    <ul class="text-justify	mb-3 font-bold ms-20" style="list-style-type: square;">
+                        <li>Normalización: Organiza los datos en tablas para eliminar duplicaciones. Este proceso se realiza en varias etapas conocidas como formas normales (1NF, 2NF, 3NF).</li>
+                        <li>Claves primarias y foráneas: Usa claves para identificar y relacionar registros sin duplicarlos.</li>
+                        <li>Restricciones de unicidad: Asegura que no se puedan insertar valores duplicados en ciertas columnas.</li>
+                        <li>Validación de datos: Implementa reglas para asegurar que los datos sean correctos y consistentes.</li>
+                </ul><br><br>
+                <img src="img/TIPOS DE BASES DE DATOS/REDUNDANCIA2.png.jpg" class="w-800 h-80 ms-60" alt="">
+            </article>
+       </section>
+    </div>
+</body>
+</html>
